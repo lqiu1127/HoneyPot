@@ -1,9 +1,7 @@
-FROM ubuntu:15.10
+FROM phusion/baseimage
 
-RUN apt-get update && \
-    apt-get install -y openssh-server && \
-    mkdir /var/run/sshd
+RUN rm -f /etc/service/sshd/down && \
+	echo root:password | chpasswd
 
-RUN echo root:password | chpasswd
+COPY sshd_config /etc/ssh/
 EXPOSE 22
-CMD ["/usr/sbin/sshd", "-D"]
