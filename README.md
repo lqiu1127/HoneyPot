@@ -1,4 +1,11 @@
-# docker-honeypot
+# Honeypot
+
+Starting the walkthrough gif.
+<img src='http://i.imgur.com/2dRGhJV.gif' title='General App Overview' width='' alt='Video Walkthrough' />
+
+<img src='http://i.imgur.com/Nw6Zib2.gif' title='General App Overview' width='' alt='Video Walkthrough' />
+
+
 Create a docker image with the lines
 
 ```
